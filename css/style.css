@@ -1,0 +1,2010 @@
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: #2696e8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696e8,
+        0 0 60px #2696e8,
+        0 0 100px #2696e8;
+
+    animation: colors 5s infinite;
+    /* transform: translate(-50%, -50%); */
+    display: none;
+
+
+}
+
+@keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696e8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(30%, -30%);
+    border-radius: 50%;
+}
+
+
+body {
+    font-family: 'Tajawal', sans-serif !important;
+    color: #fff;
+    background: #000;
+}
+
+.light {
+    background: #fff;
+    color: #1E1E1E;
+
+}
+
+* {
+    transition: all 200ms;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: unset;
+}
+
+.MainHead {
+    background: url(../images/MainBg.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+
+.BgOpacity {
+    background: rgba(0, 0, 0, 0.4);
+    min-height: 800px;
+}
+
+.container.topNav {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.TalkLeft h5 {
+    border-right: 1px solid #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 10px;
+    margin-bottom: 0;
+    margin-left: -11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.TalkLeft a {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.TopLink {
+    text-align: right;
+}
+
+.TalkLeft a {
+    font-size: 16px;
+    border-right: 1px solid #fff;
+    padding: 10px;
+}
+
+.TopLink {
+    text-align: right;
+}
+
+.TopLink a {
+    display: inline-block;
+    padding: 10px;
+    border-right: 1px solid #fff;
+    font-size: 13px;
+    position: relative;
+}
+
+.TopLink a:last-child {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: -5px;
+}
+
+
+.TopLink .active:after {
+    content: "";
+    width: 80%;
+    display: block;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 5px;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.logo a img {
+    width: 200px;
+}
+
+a.nav-link.active {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-link {
+    color: #fff;
+    margin: 0 8px;
+}
+
+.nav-link:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.container.WelcomeSec {
+    margin-top: 170px;
+}
+
+.WelcomeTopH5 h5 {
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 0;
+}
+
+.GetNextH1 h1 {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.WelcomeBtn button {
+    background: #3D85C6;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    outline: 0;
+    border: 0;
+}
+
+.WelcomeBtn button:active {
+    border: 0;
+}
+
+.WelcomeBtn button:hover {
+    background: #0d6ac9;
+}
+
+.MainValuesBlock {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.ValuesH1 {
+    margin-bottom: 60px;
+}
+
+.ValuesH1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.ValuesBlock {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ValuesBlock img {
+    width: 50px;
+}
+
+.ValuesBlock h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.ValuesBlock p {
+    font-size: 16px;
+    color: #c1c1c1;
+    padding: 0 15px;
+}
+
+.MainServicesBlock {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.ServicesH1 {
+    margin-bottom: 60px;
+}
+
+.ServicesH1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ---- .ServicesBlock -----  */
+
+.ServicesBlock {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.ServicesBlock2 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.ServicesBlock3 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.ServicesBlock4 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.ServicesBlock5 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.ServicesBlock6 {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.ServicesBlockInner {
+    background: #484848;
+    border-radius: 10px;
+    padding: 35px 15px;
+}
+
+/* -------icons colors -----  */
+
+span.ServImgSpan {
+    background: #239443;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span.ServImgSpan1 {
+    background: #75489C;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span.ServImgSpan2 {
+    background: #B8509D;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span.ServImgSpan3 {
+    background: #3D84C4;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span.ServImgSpan4 {
+    background: red;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span.ServImgSpan5 {
+    background: orange;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span.ServImgSpan6 {
+    background: purple;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.ServicesBlock img {
+    width: 50px;
+}
+
+/* ------- underlins position ----- */
+
+.ServicesBlock h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ServicesBlock2 h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ServicesBlock3 h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ServicesBlock4 h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ServicesBlock5 h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
+
+.ServicesBlock6 h1 {
+    margin: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+/* ----- underlines -----  */
+.ServicesBlock h1:before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: #239443;
+    width: 55px;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+}
+
+.ServicesBlock h1:after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: #239443;
+    width: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-radius: 5px;
+}
+
+.ServicesBlock2 h1:before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: #B8509D;
+    width: 55px;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+}
+
+.ServicesBlock2 h1:after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: #B8509D;
+    width: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-radius: 5px;
+}
+
+.ServicesBlock3 h1:before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: #0a66c2;
+    width: 55px;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+}
+
+.ServicesBlock3 h1:after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: #0a66c2;
+    width: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-radius: 5px;
+}
+
+.ServicesBlock4 h1:before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: red;
+    width: 55px;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+}
+
+.ServicesBlock4 h1:after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: red;
+    width: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-radius: 5px;
+}
+
+.ServicesBlock5 h1:before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: orange;
+    width: 55px;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+}
+
+.ServicesBlock5 h1:after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: orange;
+    width: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-radius: 5px;
+}
+
+.ServicesBlock6 h1:before {
+    content: "";
+    display: block;
+    height: 6px;
+    background: purple;
+    width: 55px;
+    position: absolute;
+    bottom: -15px;
+    border-radius: 20px;
+}
+
+.ServicesBlock6 h1:after {
+    content: "";
+    display: block;
+    height: 6px;
+    background: purple;
+    width: 20px;
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    border-radius: 5px;
+}
+
+.ServicesBlock p {
+    font-size: 16px;
+    color: #c1c1c1;
+    margin: 40px 0 0 0;
+}
+
+.ProjectsH1 {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.ProjectsH1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+}
+
+.ProjImg img {
+    width: 100% !important;
+    border: 10px solid #2E2D2D;
+    border-radius: 15px;
+    height: 300px;
+}
+
+.ProjImg p {
+    color: #C6C6C6;
+    margin: 10px 0 0 10px;
+}
+
+.ProjImg a {
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    display: block;
+}
+
+.ProjImg a span {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    font-size: 20px;
+    color: #3D85C6;
+}
+
+.Projets {
+    position: relative;
+}
+
+.Projets .owl-nav {
+    position: absolute;
+    top: -108px;
+    right: 0;
+}
+
+.Projets .owl-nav button {
+    background: #3D85C6 !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px !important;
+}
+
+.Projets .owl-nav button span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.PartnerSec {
+    margin: 70px 0;
+    padding: 60px 0;
+    background: #2E2D2D;
+}
+
+.PartnerH1 h1 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.PartnersBlock {
+    background: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.MissionImg img {
+    width: 100%;
+}
+
+.MissionCont h1 {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.MissionCont p {
+    color: #C6C6C6;
+}
+
+.MissionCont a {
+    background: #3D85C6;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    outline: 0;
+    border: 0;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.TestMonCont {
+    margin-top: 70px;
+}
+
+.MissionCont a:hover {
+    background: #0d6ac9;
+}
+
+.PromiseSec {
+    background: #3D85C6;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+.PromiseCont {
+    margin-bottom: 50px;
+}
+
+.PromiseH1 h1 {
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.PromiseCont img {
+    width: 70%;
+}
+
+.PromiseCont h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.PromiseCont p {
+    padding-right: 30px;
+    margin: 0;
+}
+
+.TestMonCont h1 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.item.TestmonialsImg {
+    text-align: center;
+}
+
+.QomaCont {
+    position: relative;
+    width: 120px !important;
+    margin: 0 auto;
+}
+
+.QomaCont::after {
+    content: "";
+    width: 40px !important;
+    height: 40px !important;
+    background: url(../images/qoma.svg) center center no-repeat fixed, #3D85C6;
+    bottom: 0;
+    left: -10px;
+    border-radius: 50px;
+    position: absolute;
+    display: inline-block;
+}
+
+.TestmonialsImg h6 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.TestmonialsImg p {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #C6C6C6;
+}
+
+.Testmonials .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.Testmonials .owl-nav button {
+    left: 0 !important;
+    position: absolute;
+    background: #101010 !important;
+    color: #fff !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 40px !important;
+}
+
+.Testmonials .owl-nav button:hover {
+    background: #3d85c6 !important;
+}
+
+.Testmonials .owl-nav .owl-next {
+    right: 0;
+    left: unset !important;
+}
+
+.BrdBt {
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+}
+
+.CountH1 h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 70px;
+    margin: 40px 0;
+}
+
+.CountNum {
+    text-align: center;
+}
+
+.CountNum h1 {
+    font-weight: bold;
+    color: #3d85c6;
+}
+
+.CountNum p {
+    color: #C6C6C6;
+}
+
+.CountCont {
+    background: #2e2d2d;
+    padding-bottom: 40px;
+}
+
+ul.MissionUl {
+    list-style: none;
+    padding: 10px 0;
+}
+
+ul.MissionUl li {
+    margin: 10px 0;
+}
+
+.Mission2 h1 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+.Mission2 p {
+    color: #C6C6C6;
+}
+
+ul.MissionUl li svg {
+    color: #3d85c6;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.Mission2Img img {
+    width: 100%;
+}
+
+.Mission2Cont {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.ContactImg img {
+    width: 107%;
+}
+
+.ContactForm {
+    background: #3D85C6;
+}
+
+.ContactForm form input::placeholder {
+    color: #fff;
+}
+
+.ContactForm form textarea::placeholder {
+    color: #fff;
+}
+
+.ContactForm form textarea:focus {
+    outline: 0;
+}
+
+.ContactForm form input:focus {
+    outline: 0;
+}
+
+.ContactForm form input {
+    width: 44%;
+    margin: 10px 10px;
+    display: inline-block;
+    height: 45px;
+    background: #4291d9;
+    border: 0;
+    color: #fff !important;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.ContactForm form textarea {
+    margin: 10px;
+    display: inline-block;
+    background: #4291d9;
+    border: 0;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 92%;
+}
+
+.ContactForm h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ContactForm form button {
+    background: #fff;
+    border: 0;
+    padding: 10px 25px;
+    float: right;
+    margin: 10px 40px;
+    border-radius: 30px;
+    color: #3D85C6;
+    font-weight: bold;
+}
+
+.BlogCont {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.BlogH1 h1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.BlogH1 p {
+    width: 50%;
+    color: #C6C6C6;
+}
+
+.BlogH1 a {
+    display: inline-block;
+    padding: 10px 40px;
+    background: #3d85c6;
+    border-radius: 31px;
+}
+
+.BlogH1 {
+    margin-bottom: 40px;
+}
+
+.BlogBlock img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.BlogBlock span {
+    color: #C6C6C6;
+    font-size: 13px;
+    display: block;
+    margin: 8px 0;
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: 10px;
+}
+
+.BlogBlock h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.BlogBlock p {
+    color: #C6C6C6;
+    margin: 20px 0;
+}
+
+.BlogBlock a {
+    color: #3d85c6;
+}
+
+.WorkWithUs {
+    background: #2E2D2D;
+    padding: 50px 0;
+}
+
+.WorkWithUsH1 h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.WorkWithUsH1 p {
+    color: #C6C6C6;
+    margin-top: 20px;
+}
+
+.WorkWithUsLink {
+    text-align: right;
+}
+
+.WorkWithUsLink a {
+    background: #3D85C6;
+    padding: 20px 60px;
+    border-radius: 60px;
+    margin-top: 13%;
+    display: inline-block;
+}
+
+.FooterContainer {
+    margin-top: 40px;
+}
+
+.footerLogo {
+    border-bottom: 1px solid #808080;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.footerLogo a img {
+    width: 150px;
+}
+
+.footerUl1 {
+    float: left;
+    margin-right: 90px;
+    padding: 0;
+    list-style: none;
+}
+
+.footerUl1 li {
+    margin-bottom: 15px;
+}
+
+.footerUl1 li a {
+    color: #C6C6C6;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.FooterH1 h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.StayTouch {
+    margin-top: 10px;
+}
+
+.StayTouch h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.StayTouch p {
+    color: #C6C6C6;
+    font-size: 14px;
+}
+
+.StayTouch form input {
+    background: #333333;
+    padding: 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+}
+
+.StayTouch form {
+    position: relative;
+}
+
+.StayTouch form button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: #3D85C6;
+    color: #fff;
+    border: 0;
+    padding: 11px 30px;
+    border-radius: 50px;
+}
+
+.footerLinksContainer {
+    border-bottom: 1px solid #808080;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.CopySec {
+    color: #C6C6C6;
+    padding-bottom: 25px;
+}
+
+.footerUl1 li a:hover {
+    padding-left: 13px;
+    color: #3d85c6;
+}
+
+.SocialSec {
+    text-align: right;
+}
+
+.SocialSec a {
+    font-size: 22px;
+    margin-left: 5px;
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    line-height: 33px;
+    border-radius: 50px;
+}
+
+.SocialSec a:hover {
+    font-size: 18px;
+    background: #000;
+}
+
+a.Insta {
+    color: #c16608;
+}
+
+a.Twit {
+    color: #1d9bf0;
+}
+
+a.Snap {
+    color: #fbff00;
+}
+
+a.Linked {
+    color: #0a66c2;
+}
+
+.PreLoader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background: #1e1e1e;
+    z-index: 10000;
+    transition: all 200ms;
+    display: block;
+}
+
+.pl {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    height: 110px;
+    transition: all 200ms;
+    display: block;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.SubVisionBlock {
+    background: #2E2D2D;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.SubVisionBlock div {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    background: #2f3e4c;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.SubVisionBlock div:last-child {
+    width: 60%;
+    background: 0;
+    text-align: left;
+    margin-left: 5%;
+    padding-top: 10px;
+}
+
+
+.SubVisionBlock div h1 {
+    font-size: 18px;
+}
+
+.SubVisionBlock div p {
+    font-size: 15px;
+    margin: 0;
+    line-height: 1;
+}
+
+.SubDevImg img {
+    width: 100%;
+}
+
+.pl__ring,
+.pl__ball {
+    animation: ring 2s ease-out infinite;
+}
+
+.pl__ball {
+    animation-name: ball;
+}
+
+/* Dark theme  */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: hsl(var(--hue), 10%, 10%);
+        --fg: hsl(var(--hue), 10%, 90%);
+    }
+}
+
+/* Animation */
+@keyframes ring {
+    from {
+        stroke-dasharray: 0 257 0 0 1 0 0 258;
+    }
+
+    25% {
+        stroke-dasharray: 0 0 0 0 257 0 258 0;
+    }
+
+    50%,
+    to {
+        stroke-dasharray: 0 0 0 0 0 515 0 0;
+    }
+}
+
+@keyframes ball {
+
+    from,
+    50% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: 1;
+    }
+
+    64% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -109;
+    }
+
+    78% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -145;
+    }
+
+    92% {
+        animation-timing-function: ease-in;
+        stroke-dashoffset: -157;
+    }
+
+    57%,
+    71%,
+    85%,
+    99%,
+    to {
+        animation-timing-function: ease-out;
+        stroke-dashoffset: -163;
+    }
+}
+
+
+.MainHead.SubPage {
+    min-height: 300px !important;
+}
+
+.MainHead.SubPage .BgOpacity {
+    min-height: 300px;
+    padding-bottom: 70px;
+}
+
+.MainHead.SubPage .BgOpacity .WelcomeSec {
+    margin-top: 70px;
+}
+
+.SubHead {
+    text-align: center;
+}
+
+.SubHead h1 {
+    font-weight: bold;
+}
+
+.SubServImg {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.SubServImg p {
+    font-size: 14px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.SubServImg p:before {
+    content: "";
+    background: #3D85C6;
+    width: 50px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    border-radius: 20px;
+}
+
+.SubServImg h1 {
+    width: 50%;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.SubServImg img {
+    width: 100%;
+}
+
+.SubMission {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.WeDevlopeContainer {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.WeDevlope h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.WeDevlope p {
+    margin-top: 50px;
+    color: #C6C6C6;
+    line-height: 2;
+}
+
+.ProductsBlockContainer {
+    background: #2E2D2D;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.ProductsBlockImg img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ProductsBlockContent img {
+    width: 200px;
+}
+
+.ProductsBlockContent h1 {
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.ProductsBlockContent p a {
+    background: #19191980;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 11px;
+}
+
+.ProductsBlockContent p {
+    font-size: 15px;
+    color: #C6C6C6;
+}
+
+.ProductBlockCoast {
+    margin-top: 50px;
+    border-top: 1px solid #c6c6c6;
+    padding-top: 35px;
+}
+
+.ProductBlockCoast h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.ProductBlockCoast span {
+    color: #C6C6C6;
+}
+
+.ProductBlockCoast a {
+    margin-left: auto;
+    float: right;
+    background: #3D85C6;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 50px;
+    margin-top: -10px;
+}
+
+.nav-link:focus {
+    color: unset;
+}
+
+.SingleProductReq span {
+    color: #C6C6C6;
+}
+
+.SingleProductReqBtn {
+    text-align: right;
+}
+
+.SingleProductReqBtn a {
+    background: #3D85C6;
+    padding: 15px 40px;
+    border-radius: 50px;
+}
+
+.SingleProductReqBtn a {
+    background: #3D85C6;
+    padding: 15px 40px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.SingleProjectMainImg img {
+    width: 100%;
+}
+
+.SingleProjectBlockContent {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.SingleProjectBlockContent img {
+    width: 100%;
+}
+
+.SingleProjectBlockContent h1 {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.SingleProjectBlockContent p {
+    color: #C6C6C6;
+    font-size: 16px;
+}
+
+.SystemCompTitle {
+    margin: 60px 0 30px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ProjectDetailsCont h1 {
+    margin-bottom: 20px;
+}
+
+.ProjectDetailsCont h1 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.ProjectDetailsCont p {
+    color: #C6C6C6;
+    line-height: 2;
+}
+
+.ProjectDetailsImg img {
+    width: 100%;
+    height: 400px;
+}
+
+.ProjectDetailsImg {
+    margin-bottom: 60px;
+}
+
+.SingAboutCont>h1 {
+    font-weight: bold;
+    margin: 20px 0 30px 0;
+}
+
+.SingAboutCont>p {
+    color: #C6C6C6;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #C6C6C6;
+    padding-bottom: 40px;
+}
+
+.SingAboutContBlock>div>div {
+    background: #2E2D2D;
+    height: 110px;
+    border-radius: 15px;
+    line-height: 110px;
+    text-align: center;
+    font-size: 25px;
+    color: #808080;
+}
+
+.SingAboutContBlock {
+    margin-bottom: 20px;
+}
+
+.SingAboutContBlockHP h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.SingAboutContBlockHP p {
+    color: #C6C6C6;
+}
+
+
+.JoinTeamBtn a {
+    background: #3D85C6;
+    padding: 20px 60px;
+    border-radius: 60px;
+    display: inline-block;
+}
+
+.SingAboutContBlockImg img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.bgSoftDark {
+    background: #2E2D2D;
+}
+
+.OurTeamContainer {
+    background: #3D85C6;
+}
+
+.OurTeamH1 h1 {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.OurTeamJoinBtn {
+    text-align: right;
+}
+
+.OurTeamJoinBtn a {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #fff;
+    color: #3d85c6;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.OurTeamContainer .Projets .owl-nav {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+
+.OurTeam {
+    direction: ltr;
+}
+
+.OurTeamSlide img {
+    width: 95% !important;
+    height: 400px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.OurTeamSlide h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.OurTeamSlide p {
+    text-align: center;
+}
+
+.OurTeamContainer .owl-nav {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+}
+
+.OurTeamContainer .owl-nav button {
+    width: 50px;
+    height: 50px;
+    line-height: 0 !important;
+    background: #fff !important;
+    border-radius: 60px !important;
+    font-size: 30px !important;
+    color: #3d85c6 !important;
+}
+
+.OurTeamContainer .owl-nav .owl-prev {
+    left: -20px !important;
+    position: absolute;
+}
+
+.OurTeamContainer .owl-nav .owl-next {
+    right: -20px !important;
+    position: absolute;
+}
+
+.ContactContentInfo form input {
+    width: 44%;
+    margin: 10px 10px;
+    display: inline-block;
+    height: 45px;
+    background: #2E2D2D;
+    border: 0;
+    color: #fff !important;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.ContactContentInfo form textarea {
+    margin: 10px;
+    display: inline-block;
+    background: #2E2D2D;
+    border: 0;
+    color: #fff !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 92%;
+}
+
+.ContactContentInfo form button {
+    background: #3D85C6;
+    border: 0;
+    padding: 10px 25px;
+    margin-left: auto;
+    margin-right: 35px;
+    display: block;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.ContactContentImage img {
+    width: 100%;
+    height: 400px;
+}
+
+.CoDetails {
+    margin: 70px 0;
+    padding: 50px 0;
+}
+
+.CoDetails2Blocks {
+    background: #191919;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.CoDetails2Blocks svg {
+    font-size: 30px;
+    background: #2E2D2D;
+    padding: 20px 20px;
+    border-radius: 10px;
+    color: #808080;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+.CoDetails2Blocks p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.CoDetails2Blocks h1 {
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.SentSuccess {
+    margin: 10px;
+    background: #2E2D2D;
+    border: 0;
+    color: #10b705 !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 92%;
+}
+
+.SentSuccess p {
+    margin: 0;
+}
+
+.FaqsTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.FaqsTitle h1 {
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.AccordionContainer .accordion-item {
+    border: 1px solid #2e2d2d;
+    background: #1e1e1e;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+button.accordion-button.collapsed {
+    background: unset !important;
+}
+
+.accordion {
+    background: unset !important;
+}
+
+.AccordionContainer .accordion-button.collapsed {
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+button.accordion-button {
+    box-shadow: unset !important;
+    background: unset !important;
+}
+
+.accordion-flush .accordion-item:first-child {
+    border-top: 1px solid #2e2d2d;
+}
+
+.accordion-flush .accordion-item:last-child {
+    border-bottom: 1px solid #2e2d2d;
+}
+
+.accordion-body {
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.accordion-button::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    background-image: unset !important;
+    background-color: #808080;
+    width: 35px;
+    height: 35px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: unset !important;
+    font-size: 18px;
+    background-color: #3d85c6;
+}
+
+.AccordionContainer {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .TalkLeft {
+        text-align: center;
+    }
+
+    .TalkLeft h5 {
+        display: none;
+    }
+
+    .TalkLeft a {
+        display: inline-block;
+        margin-left: 0;
+        padding: 7px 20px 8px 0;
+    }
+
+    .TopLink {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    button.navbar-toggler {
+        background: #fff;
+    }
+
+    .container.WelcomeSec {
+        margin-top: 70px;
+    }
+
+    .BgOpacity {
+        min-height: 600px;
+    }
+
+    .MainHead {
+        min-height: 600px;
+    }
+
+    .PartnersBlock {
+        margin-bottom: 20px;
+    }
+
+    .MissionCont h1 {
+        font-size: 45px;
+    }
+
+    .CountH1 h1 {
+        font-size: 30px;
+    }
+
+    .CountNum {
+        margin-bottom: 30px;
+    }
+
+    .ContactForm h1 {
+        font-size: 40px;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .BlogH1 p {
+        width: 100%;
+    }
+
+    .BlogBlock {
+        margin-bottom: 40px;
+    }
+
+    .BlogBlock p {
+        margin: 10px 0;
+    }
+
+    .WorkWithUsH1 h1 {
+        font-size: 30px;
+    }
+
+    .WorkWithUsLink {
+        text-align: center;
+    }
+
+    .WorkWithUsLink a {
+        margin-top: 30px;
+    }
+
+    .WorkWithUsH1 {
+        text-align: center;
+    }
+
+    .footerLogo {
+        text-align: center;
+    }
+
+    .footerUl1 {
+        margin-right: 10px;
+    }
+
+    .StayTouch {
+        text-align: center;
+    }
+
+    .CopySec {
+        text-align: center;
+    }
+
+    .SocialSec {
+        text-align: center;
+    }
+
+    .PromiseCont img {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .MissionCont {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .ContactForm form textarea {
+        height: 200px !important;
+    }
+
+    .ContactForm form {
+        text-align: center;
+    }
+
+    .ContactForm form button {
+        float: unset;
+    }
+
+    .BlogH1 {
+        text-align: center;
+    }
+
+    .BlogCont {
+        margin-bottom: 0px;
+    }
+
+    .ContactImg {
+        padding: 0;
+    }
+
+    .ContactImg img {
+        width: 100%;
+    }
+
+    .WeDevlope h1 {
+        font-size: 30px;
+    }
+
+    .elfsight-app-92a9fac2-959e-4ec3-9126-ba117d5a69e2 {
+        width: 50px;
+    }
+}
+
+/* --------- Dropdown -------  */
+
+/* .dropdown {
+    background: #7b1fa2;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    transform: perspective(1000px);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    top: 0;
+    visibility: hidden;
+    z-index: -99999;
+}
+
+.dropdown-menu li:first-child {
+    cursor: default;
+}
+
+.dropdown-menu a {
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.dropdown-menu a:hover {
+    background: #ba68c8;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+    background: #7b1fa2;
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    width: 100%;
+    -webkit-transition: all .5s, background, 2s .5s linear;
+    transition: all .5s, background 2s .5s linear;
+} */
+.dropdown .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #2E2D2D;
+    opacity: 1;
+    transition-delay: 0.5s;
+
+}
+
+/* ------------ stats counter -------  */
+
+.statistic-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.count-title {
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.stats-text {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.stats-line-black {
+    margin: 12px auto 0;
+    width: 55px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.stats-icon {
+    font-size: 35px;
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .counter {
+        margin-bottom: 40px;
+    }
+}

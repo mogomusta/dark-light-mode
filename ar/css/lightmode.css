@@ -1,0 +1,61 @@
+body.light-mode {
+    background-color: white;
+    color: #f2f2f2;
+}
+
+/* ---- وعدنا----  */
+
+body.light-mode .header,
+body.light-mode .p-light,
+body.light-mode .white {
+    color: white;
+}
+
+body.light-mode p,
+body.light-mode h1,
+body.light-mode .a-project,
+body.light-mode .black {
+    color: black;
+}
+
+body.light-mode span {
+    color: white;
+
+}
+
+body.light-mode span {
+    color: darkred;
+}
+
+body.light-mode .hover-this span {
+    color: white;
+}
+
+body.light-mode .hover-this .red-span {
+    color: black;
+}
+
+/* ----- services ----  */
+body.light-mode .b-light {
+    color: rgb(34, 33, 33);
+}
+
+/* body.light-mode {
+    color: white;
+} */
+
+body.light-mode .WorkWithUs,
+body.light-mode .ServicesBlockInner,
+body.light-mode .PartnerSec,
+body.light-mode .cn1 {
+    background: white;
+}
+
+body.light-mode .bg-block {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* body.light-mode .wheat {
+
+    background-color: wheat;
+} */
